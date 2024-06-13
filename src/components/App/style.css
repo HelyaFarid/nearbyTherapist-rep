@@ -1,0 +1,7 @@
+.App {
+  background-image: url("assets/thebg.png");
+  font-family: "Arial", apple-system, Courier New, Courier, monospace;
+  text-align: center;
+  overflow: hidden;
+  height: 100%;
+}

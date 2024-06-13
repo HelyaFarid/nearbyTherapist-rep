@@ -1,0 +1,126 @@
+.grid {
+  display: grid;
+  height: 600px;
+  transform: skewY(-7deg);
+  grid-template-rows: repeat(auto-fill, 35px);
+  grid-template-columns: repeat(35, 22px) 1fr;
+}
+
+.grid > article {
+  font: 12pt Inter, Arial, -apple-system, BlinkMacSystemFont, Helvetica Neue,
+    helvetica, arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+  background-color: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 0 10px -5px #737b88, 3px 3px 0 0 rgb(0 0 0 / 5%);
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+  height: 12rem;
+  width: 20rem;
+  transition: all 0.2s;
+  position: relative;
+}
+.grid > article:hover {
+  cursor: pointer;
+  transform: translateX(-11rem) scale(1.4) skewY(7deg) rotate(0) !important;
+  z-index: 1;
+  position: relative;
+}
+
+.article1 {
+  grid-area: 3 / 7;
+
+  transform: scale(0.8) skewY(7deg) rotate(-7deg);
+}
+
+.article2 {
+  grid-area: 3 / 18;
+  transform: scale(1) skewY(7deg) rotate(-7deg);
+}
+
+.article3 {
+  grid-area: 8 / 8;
+  transform: scale(0.7) skewY(7deg) rotate(-7deg);
+}
+
+.article4 {
+  grid-area: 5 / 12;
+  transform: scale(1) skewY(7deg) rotate(-7deg);
+}
+
+.article5 {
+  grid-area: 6 / 23;
+  transform: scale(1) skewY(7deg) rotate(-7deg);
+}
+
+.article6 {
+  grid-area: 9 / 18;
+  transform: scale(1) skewY(7deg) rotate(-7deg);
+}
+
+.grid > article img {
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  border-style: none;
+}
+
+.text {
+  padding: 15px 15px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-align: left;
+}
+
+.text > q {
+  display: block;
+  font-size: 0.9em;
+  font-style: italic;
+  font-weight: 300;
+  color: #888;
+  margin: 0.5em 0 0 0.3em;
+  line-height: 1.3em;
+}
+
+q:before,
+q:after {
+  content: "";
+}
+
+.imgbox {
+  box-sizing: border-box;
+  min-width: 0;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+}
+
+.titlebox {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  margin-left: -0.25em;
+  margin-right: -0.25em;
+  margin-top: 1em;
+  -webkit-box-align: center;
+}
+
+.title {
+  box-sizing: border-box;
+  min-width: 0;
+  margin-left: 0.25em;
+  margin-right: 1em;
+  flex: 1;
+  font-weight: bold;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.svg {
+  box-sizing: border-box;
+  min-width: 0;
+  margin-right: 2em;
+  width: 2em;
+}

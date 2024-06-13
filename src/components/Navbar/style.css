@@ -1,0 +1,33 @@
+:root {
+  --info: #17a2b8;
+  --white: #fff;
+}
+
+.navLogo {
+  background-color: var(--info);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navLogo h1 {
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navLogo a {
+  color: var(--white);
+  display: inline-block;
+  padding: 20px;
+  font-size: 1.8em;
+}
+
+.navLogo span {
+  display: inline-block;
+  font-size: 0.4em;
+}
+
+.newSearch {
+  list-style: none;
+}
